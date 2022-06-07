@@ -1,2 +1,2 @@
 # password-generator
-A password generator web app.
+A [LIVE](https://alexmayberry.github.io/password-generator/) password generator web app.

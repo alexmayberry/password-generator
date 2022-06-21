@@ -1,7 +1,3 @@
-// Tasks my code needs to complete
-
-
-
 let passLength = 0;
 let lowercaseLetters = false;
 let uppercaseLetters = false;
@@ -63,13 +59,14 @@ function generatePassword() {
 
 
   
-  // randomly pick characters in that possibleCharacter string and add to final password string
+  // randomly pick characters in the possibleCharacter string and add to final password (finalPass) string
   let finalPass = "";
   for (i = 0; i < passLength; i++) {
     finalPass += possibleCharacters.charAt(Math.floor(Math.random() * possibleCharacters.length))
   }
   console.log("final pass: " + finalPass);
   
+  // Return the final password string
   return finalPass;
 };
 

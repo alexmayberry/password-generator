@@ -71,33 +71,15 @@ function generatePassword() {
   console.log("final pass: " + finalPass);
   
   return finalPass;
-
-  //write password to html element
-
-
-
 };
 
-// generatePassword();
-
-console.log("generatepassword is: " + generatePassword())
-
-
-
-
-
-
-
-
-
-
-// Write password to html element
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
+  generatePassword();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 

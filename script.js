@@ -11,7 +11,6 @@ let possibleLetters = "abcdefghijklmnopqrstuvwxyz";
 let possibleNumbers = "0123456789";
 let possibleSpecialCharacters = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
-console.log(possibleSpecialCharacters);
 function generatePassword() {
   // store password preferences in variables and validate preferences
   passLength = prompt("How many characters would you like your password to be? Please enter a number between 8 and 129");
@@ -67,9 +66,11 @@ function generatePassword() {
   // randomly pick characters in that possibleCharacter string and add to final password string
   let finalPass = "";
   for (i = 0; i < passLength; i++) {
-    finalPass += possibleCharacters.charAt[i]
+    finalPass += possibleCharacters.charAt(Math.floor(Math.random() * possibleCharacters.length))
   }
-  console.log("final pass: " + finalPass)
+  console.log("final pass: " + finalPass);
+  
+  return finalPass;
 
   //write password to html element
 
@@ -77,7 +78,9 @@ function generatePassword() {
 
 };
 
-generatePassword();
+// generatePassword();
+
+console.log("generatepassword is: " + generatePassword())
 
 
 
@@ -87,7 +90,6 @@ generatePassword();
 
 
 
-// Randomly select characters to construct password
 
 // Write password to html element
 

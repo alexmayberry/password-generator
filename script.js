@@ -40,7 +40,7 @@ function generatePassword() {
 
   console.log("special Characters is: " + specialCharacters)
 
-  if (uppercaseLetters === false && uppercaseLetters === lowercaseLetters === numbers === specialCharacters) {
+  if (uppercaseLetters === false && uppercaseLetters === false && lowercaseLetters === false && numbers === false && specialCharacters === false) {
     alert("Please choose at least one types of characters to include in your password.");
     generatePassword();
   }

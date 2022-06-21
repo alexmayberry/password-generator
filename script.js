@@ -65,7 +65,11 @@ function generatePassword() {
 
   
   // randomly pick characters in that possibleCharacter string and add to final password string
-
+  let finalPass = "";
+  for (i = 0; i < passLength; i++) {
+    finalPass += possibleCharacters.charAt[i]
+  }
+  console.log("final pass: " + finalPass)
 
   //write password to html element
 

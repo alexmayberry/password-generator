@@ -41,13 +41,31 @@ function generatePassword() {
   console.log("special Characters is: " + specialCharacters)
 
   if (uppercaseLetters === false && uppercaseLetters === lowercaseLetters === numbers === specialCharacters) {
-    alert("Please choose at least two types of characters to include in your password.");
+    alert("Please choose at least one types of characters to include in your password.");
     generatePassword();
   }
 
   // create string with all possible characters for password
+  let possibleCharacters = "";
 
+  if (lowercaseLetters === true) {
+    possibleCharacters += possibleLetters;
+  }
+  if (uppercaseLetters === true) {
+    possibleCharacters += possibleLetters.toUpperCase();
+  }
+  if (numbers === true) {
+    possibleCharacters += possibleNumbers;
+  }
+  if (specialCharacters === true) {
+    possibleCharacters += possibleSpecialCharacters;
+  }
+  console.log("final string of possible characters is: " + possibleCharacters + " Which has " + possibleCharacters.length + " number of characters.")
+
+
+  
   // randomly pick characters in that possibleCharacter string and add to final password string
+
 
   //write password to html element
 
